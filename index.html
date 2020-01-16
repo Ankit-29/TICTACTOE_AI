@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+    <div class="row wrap">
+        <div><h2 class="scores">You (O) : 0</h2></div>
+        <div><h2 class="scores">Computer (X) :0</h2></div>
+    </div>
+    <div class="board">
+        <div class="row">
+            <div class="block" onclick="turn(this,0);"></div>
+            <div class="block" onclick="turn(this,1);"></div>
+            <div class="block" onclick="turn(this,2);"></div>
+        </div>
+        <div class="row">
+            <div class="block" onclick="turn(this,3);"></div>
+            <div class="block" onclick="turn(this,4);"></div>
+            <div class="block" onclick="turn(this,5);"></div>
+        </div>
+        <div class="row">
+            <div class="block" onclick="turn(this,6);"></div>
+            <div class="block" onclick="turn(this,7);"></div>
+            <div class="block" onclick="turn(this,8);"></div>
+        </div>
+        <div class="row">
+            <div><button class="btn" onclick="reset()">Reset Board</button></div>
+            <div><button class="btn" onclick="newGame()">New Game</button></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
